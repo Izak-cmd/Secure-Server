@@ -16,9 +16,9 @@ It is important that you note the Port generated after running this script befor
 Not included in this script for security reasons, are instructions to create a custom sudoer user group. 
 
 This can be done with the following commands;
--sudo groupadd admin
--sudo usermod -a -G admin YourUsername
--sudo dpkg-statoverride --update --add root admin 4750 /bin/su
+```sudo groupadd admin```
+```sudo usermod -a -G admin YourUsername```
+```sudo dpkg-statoverride --update --add root admin 4750 /bin/su```
 
 This will disable the usage of sudo su for users not in your custom usergroup.
 
